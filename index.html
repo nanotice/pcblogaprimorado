@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+</head>
+<body>
+
+    <header>
+
+    <h1>Meu blog tech</h1>
+    <p>Vou compartilhar meus conhecimentos sobre insetos</p>
+
+    </header>
+    <button id="dark-mode-toggle" class="floating-btn" aria-label="Alternar modo escuro">🌓</button>
+    <article>
+
+    <main>
+
+    <img src="rola-bosta.png" alt="Besouro do Esterco"> 
+    
+    <div>
+
+    
+    <h2>Meu primeiro post</h2>
+    <p class="artigo-autor">Por: Luana Araújo</p>
+    <p class="texto-post">Os besouros pertencem à ordem Coleoptera, 
+        que é simplesmente o grupo mais diverso 
+        de todo o reino animal. Entre esse grupo 
+        podemos encontrar o besouro-do-esterco 
+        (também conhecido popularmente como 
+        rola-bosta) que é um inseto famoso por 
+        seu comportamento peculiar e sua enorme 
+       importância para o meio ambiente. Como o 
+       próprio nome diz, esse besouro se alimenta 
+       e se reproduz utilizando fezes de outros 
+       animais. Eles coletam o esterco, moldam-no 
+       em formato de pequenas bolas e as rolam por 
+       longas distâncias até suas galerias 
+       subterrâneas.</p>
+
+        <div class="botoes">
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+        <button>😍<span>0</span></button>
+    </div>
+
+    </div>
+    </main>
+    </article>
+
+    <article>
+
+     <main class="segundo">
+
+    <img src="mariposa-io2.png" alt="Mariposa-Io"> 
+    
+    <div>
+
+    
+    <h2>Meu segundo post</h2>
+    <p class="artigo-autor">Por: Luana Araújo</p>
+    <p class="texto-post">As mariposas pertencem à ordem Lepidoptera, 
+        o mesmo grupo das borboletas. Embora muita 
+        gente as associe apenas à noite ou a cores 
+        escuras, elas guardam segredos fascinantes 
+        e uma diversidade impressionante. A Mariposa 
+        da imagem é uma mariposa-io (Automeris io) é 
+        uma das espécies mais famosas da América do 
+        Norte por causa de sua beleza e de seus 
+        mecanismos impressionantes de defesa. A sua 
+        característica mais marcante são dois grandes 
+        círculos pretos e azuis nas asas traseiras, 
+        que imitam perfeitamente os olhos de um animal 
+        maior (como uma coruja). Quando um predador 
+        se aproxima, ela abre as asas dianteiras de 
+        repente para dar um susto e fugir.</p>
+
+            <div class="botoes2">
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+        <button>😍<span>0</span></button>
+    </div>
+
+    </div>
+    </main>
+    </article>
+
+
+    <script>
+        const botoesReacao = document.querySelectorAll(".btn-reaction");
+        botoesReacao.forEach(function(botao) {
+            let curtiu = false;
+            botao.addEventListener("click", function() {
+                let texto = botao.querySelector("span");
+                if (!curtiu){
+                    texto.textContent = parseInt(texto.textContent) + 1;
+                    curtiu = true;
+                } else {
+                    texto.textContent = parseInt(texto.textContent) - 1;
+                    curtiu = false;
+                }
+            });
+        });
+
+        const darkToggle = document.getElementById("dark-mode-toggle");
+        darkToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>

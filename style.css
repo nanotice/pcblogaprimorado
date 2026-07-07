@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #8b857b;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 16px;
+    height: 20vh;
+    max-height: 800px;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 26px;
+    padding-top: 2rem;
+}
+
+main{
+    color: #281d24;
+    line-height: 3rem;
+    font-size: 20px;
+    display: flex;
+    margin-top: 3rem;
+}
+
+img{
+    width: 30%;
+    height: auto;
+}
+ 
+div{
+    margin-top: 3rem;
+}
+
+.artigo-autor{
+    font-weight: bold;
+}
+
+h2{
+    color: rgb(241, 182, 87);
+}
+
+main.segundo{
+     color: #281d24;
+    line-height: 3rem;
+    font-size: 20px;
+    display: flex;
+    margin-top: 10rem;
+}
+
+article{
+    display: flex;
+}
+
+.segundo img{
+    width: 800px;
+    height: auto;
+}
+
+.segundo h2{
+    color: rgb(241, 182, 87);
+}
+
+.segundo p{
+    color: #281d24;
+}
+
+button{
+    background-color: rgba(188, 188, 188, 0.89);
+    border: none;
+    width: 20%;
+    color: #000000;
+    border: solid 1px rgb(90, 85, 87);
+    font-size: 20px;
+    height: 5vh;
+    border-radius: 2rem;
+    word-spacing: 2em;
+}
+
+.botoes{
+    display: flex;         
+    gap: 90px;              
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.botoes-ju{
+    display: flex;         
+    gap: 90px;              
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.botoes-ju button{
+    background-color: rgba(188, 188, 188, 0.89);
+    border: solid 1px rgb(90, 85, 87);
+    color: rgb(0, 0, 0);
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: #b9b9b9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode {
+    background-color: #000000; 
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #5d5447; 
+}
+
+body.dark-mode .floating-btn {
+    background-color: #333333;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .artigo-autor {
+    color: #ffffff;
+}
+
+body.dark-mode .texto-post {
+    color: #ffffff;
+}
+
+body.dark-mode .segundo .texto-post {
+    color: #ffffff; 
+}
